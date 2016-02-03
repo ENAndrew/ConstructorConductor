@@ -6,10 +6,9 @@
   //code here
   
   String.prototype.reverse = function(){
-      var str = this;
       var reverseStr = [];
-      for(var i = str.length - 1; i >= 0; i--) {
-          reverseStr.push(str[i]);
+      for(var i = this.length - 1; i >= 0; i--) {
+          reverseStr.push(this[i]);
       }
       return reverseStr.join('');
   };
